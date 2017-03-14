@@ -8,5 +8,5 @@
 module.exports = {
 
     //url
-    mongodb:'mongodb://127.0.0.1/restful'
+    mongodb:'mongodb://localhost/restful'
 }

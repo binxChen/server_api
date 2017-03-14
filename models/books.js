@@ -7,16 +7,17 @@
 var mongoose = require('mongoose')
 
 var bookschema = new mongoose.Schema({
-    book_id:String,
+    book_pid:String,
     book_name:String,
     author:String,
     price:String,
-    number:Number,
+    num:Number,
+    //0在售,1下架,2预定,3展示
     state:String,
     describe:String,
     tel:Number,
-    user_id:String,
+    // user_id:String,
     create_date:{type:Date,dafault:Date.now}
 });
 
-mongoose.model('Book',bookschema);
+mongoose.model('Books',bookschema);

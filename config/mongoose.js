@@ -11,5 +11,6 @@ var mongoose = require('mongoose');
 module.exports = function () {
     var db = mongoose.connect(config.mongodb);
     require('../models/user.js');
+    require('../models/books.js');
     return db;
 }
